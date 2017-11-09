@@ -5,26 +5,26 @@ public class FactoryPatternDemo {
 	public static void main(String[] args) {
 		ShapeFactory shapeFactory = new ShapeFactory();
 
-		// 获取Circle 的对象，并调用draw 方法
+		// 鑾峰彇Circle 鐨勫璞★紝骞惰皟鐢╠raw 鏂规硶
 		Shape shape1 = shapeFactory.getShape("CIRCLE");
-		// 调用Circle 的draw方法
+		// 璋冪敤Circle 鐨刣raw鏂规硶
 		shape1.draw();
 
-		//通过反射获取
+		//閫氳繃鍙嶅皠鑾峰彇
 		Circle cir = (Circle) ShapeFactory.getClass(Circle.class);
-		// 调用Circle 的draw方法
+		// 璋冪敤Circle 鐨刣raw鏂规硶
 		cir.draw();
 
-		// 获取Rectangle 的对象，并调用draw 方法
+		// 鑾峰彇Rectangle 鐨勫璞★紝骞惰皟鐢╠raw 鏂规硶
 		Shape shape2 = shapeFactory.getShape("RECTANGLE");
 
-		// 调用Rectangle 的draw方法
+		// 璋冪敤Rectangle 鐨刣raw鏂规硶
 		shape2.draw();
 
-		// 获取Rectangle 的对象，并调用draw 方法
+		// 鑾峰彇Rectangle 鐨勫璞★紝骞惰皟鐢╠raw 鏂规硶
 		Shape shape3 = shapeFactory.getShape("SQUARE");
 
-		// 调用Rectangle 的draw方法
+		// 璋冪敤Rectangle 鐨刣raw鏂规硶
 		shape3.draw();
 	}
 }

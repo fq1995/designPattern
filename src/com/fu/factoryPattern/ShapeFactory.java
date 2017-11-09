@@ -2,7 +2,7 @@ package com.fu.factoryPattern;
 
 public class ShapeFactory {
 
-	//¸ù¾İgetShape·½·¨»ñÈ¡ĞÎ×´ÀàĞÍµÄ¶ÔÏó
+	//æ ¹æ®getShapeæ–¹æ³•è·å–å½¢çŠ¶ç±»å‹çš„å¯¹è±¡
 	public Shape getShape(String shapeType){
 		if(shapeType == null){
 			return null;
@@ -17,7 +17,7 @@ public class ShapeFactory {
 		return null;
 	}
 	
-	//Í¨¹ı·´Éä»úÖÆ½â¾öÃ¿Ôö¼ÓÒ»¸ö¶ÔÏó¾ÍĞèÒªÔö¼ÓÒ»¸ö¶ÔÏóÊµÏÖ¹¤³§
+	//é€šè¿‡åå°„æœºåˆ¶è§£å†³æ¯å¢åŠ ä¸€ä¸ªå¯¹è±¡å°±éœ€è¦å¢åŠ ä¸€ä¸ªå¯¹è±¡å®ç°å·¥å‚
 	public static Object getClass(Class<? extends Shape> clazz){
 		Object obj = null;
 		
